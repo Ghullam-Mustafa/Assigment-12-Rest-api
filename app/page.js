@@ -84,10 +84,10 @@ export default function Home() {
                 <div className="px-6 py-3   text-center font-medium text-[#33B1FF]  rounded-full"> <img src={userData.avatar_url} alt="asd" width={250} className="rounded-full text-center" height={250} /></div>
               </div>
               <div className=" flex justify-around">
-                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider"> Name : {userData.name}</div>
-                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider"> Followers :{userData.followers}</div>
-                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider"> Following :{userData.following}</div>
-                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider">{userData.public_repos}</div>
+                <div className="px-6 py-3 text-left text-l font-medium text-[#33B1FF] uppercase tracking-wider"> Name : {userData.name}</div>
+                <div className="px-6 py-3 text-left text-l font-medium text-[#33B1FF] uppercase tracking-wider"> Followers :{userData.followers}</div>
+                <div className="px-6 py-3 text-left text-l font-medium text-[#33B1FF] uppercase tracking-wider"> Following :{userData.following}</div>
+                <div className="px-6 py-3 text-left text-l font-medium text-[#33B1FF] uppercase tracking-wider"> Public repos : {userData.public_repos}</div>
               </div>
 
             </div>
