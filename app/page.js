@@ -76,22 +76,24 @@ export default function Home() {
               <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.following}</th> */}
 
 
-             {/* </div>) : (<div className="text-center text-[#33B1FF] text-5xl ">Search your user Name </div>)}   */} 
+          {/* </div>) : (<div className="text-center text-[#33B1FF] text-5xl ">Search your user Name </div>)}   */}
 
-             {data2.map((userData, i) => (
-                  <div key={i} className="border-b  font-medium  border-[#33B1FF]">
+          {data2.map((userData, i) => (
+            <div key={i} className="border-b  font-medium  border-[#33B1FF]">
+              <div className="grid justify-items-center">
+                <div className="px-6 py-3   text-center font-medium text-[#33B1FF]  rounded-full"> <img src={userData.avatar_url} alt="asd" width={250} className="rounded-full text-center" height={250} /></div>
+              </div>
+              <div className=" flex justify-around">
+                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider"> Name : {userData.name}</div>
+                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider"> Followers :{userData.followers}</div>
+                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider"> Following :{userData.following}</div>
+                <div className="px-6 py-3 text-left text-xl font-medium text-[#33B1FF] uppercase tracking-wider">{userData.public_repos}</div>
+              </div>
 
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider rounded-full"> <img src={userData.avatar_url} alt="asd" width={250} className="rounded-full" height={250} /></th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.login}</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.followers}</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.following}</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.public_repos}</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.url}</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">Action</th>
-                  </div>
-                ))}
-          
-                
+            </div>
+          ))}
+
+
 
 
 
