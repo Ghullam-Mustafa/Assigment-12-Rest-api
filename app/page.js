@@ -124,7 +124,7 @@ export default function Home() {
                   <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">Following</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">Public repos</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">Github</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">Action</th>
+
                 </tr>
               </thead>
 
@@ -139,7 +139,7 @@ export default function Home() {
                     <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.following}</th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.public_repos}</th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">{userData.url}</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-[#33B1FF] uppercase tracking-wider">Action</th>
+
                   </tr>
                 ))}
 
@@ -163,7 +163,7 @@ export default function Home() {
             </table>
 
 
-            <div className="flex  p-10">
+            {/* <div className="flex  p-10">
               <div className="px-10">
                 <img src={data.avatar_url} width={70} height={70} className='rounded-full' />
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
               <div className="px-32">{data.following}</div>
               <div className="px-32"> {data.public_repos}</div>
               <div className="px-">{data.html_url}</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
