@@ -56,7 +56,7 @@ export default function Home() {
     <>
 
 
-      <div className="bg-[#D6EFFF] pt-10  min-w-full ">
+      <div className="bg-[#D6EFFF] pt-10 pb-72 min-w-full ">
         <div className="    ">
           <div className="text-[#33B1FF] font-mono text-3xl text-center">Github User Finder</div>
 
